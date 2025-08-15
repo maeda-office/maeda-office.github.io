@@ -20,4 +20,42 @@ $(function () {
     $navMobile.slideToggle();
     $(this).find('i').toggleClass('fa-navicon fa-times');
   });
+
+  // contact form
+  const $submitButton = $(".submit");
+  $submitButton.click(function (e) {
+    e.preventDefault();
+    let errorMessage = "";
+    if ($("#name").val() === ""){
+        errorMessage += "お名前を入力してください。<br>";
+    }
+    if ($("#email").val() === "" | $("#email2").val() === "") {
+        errorMessage += "メールアドレスを入力してください。<br>";
+    } else if ($("#email").val() !== $("#email2").val()) {
+        errorMessage += "確認用のメールアドレスが一致しません。<br>";
+    } else if (!$("#email").val().match(/.+@.+\..+/)) {
+        errorMessage += "メールアドレスの形式が正しくありません。<br>";
+    }
+    if ($("#phone").val() !== "" && !$("#phone").val().match(/^[0-9\-]+$/)) {
+        errorMessage += "電話番号の形式が正しくありません。<br>";
+    }
+    if ($("#message").val() === "") {
+        errorMessage += "お問い合わせ内容を入力してください。<br>";
+    }
+    if (errorMessage) {
+        $(".error").html(errorMessage).show();
+        $(".success").hide();
+    } else {
+        // TODO: send data to the server
+        $(".error").hide();
+        $(".success").show();
+        // reset data
+        $("#name").val("");
+        $("#email").val("");
+        $("#email2").val("");
+        $("#phone").val("");
+        $("#message").val("");
+    }
+    $('html, body').animate({ scrollTop: 0 }, 300);
+  });
 })

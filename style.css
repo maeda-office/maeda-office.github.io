@@ -7,6 +7,7 @@ body {
     font-family: 'Noto Sans JP';
     font-weight: 400;
     margin: 20px auto 0 auto;
+    /* テキストの折り返し */
     overflow-wrap: anywhere;
     word-break: normal;
     line-break: strict;
@@ -21,6 +22,7 @@ h1 {
     border-bottom: 1px solid #d8d8d8;
     font-weight: normal;
     font-size: 28px;
+    margin: 0 0 20px 0;
 }
 h1 span {
     border-bottom: 5px solid #007B8F;
@@ -110,7 +112,7 @@ h1 span {
 
 /* nav_pc */
 .nav {
-    margin: 15px auto;
+    margin: 15px auto 10px auto;
     background-color: #8FE388;
     padding: 7px 0 0 0;  /* nav上の影の幅 */
 }
@@ -219,6 +221,79 @@ h1 span {
     display: block;
     border: 10px solid rgba(179, 227, 234, 0.6);
     border-radius: 5px;
+}
+@media screen and (max-width: 769px) {
+    .main img {
+        width: 95%;
+    }
+}
+.contact_form {
+    margin: 0px 50px 20px 50px;
+    width: 500px;
+    position: relative;
+}
+@media screen and (max-width: 769px) {
+    .contact_form {
+        width: auto;
+        margin: 0px 20px 20px 20px;
+    }
+}
+.contact_form label {
+    margin: 20px 0 5px 0;
+    display: inline-block;
+}
+.contact_form input {
+    border: 1px solid #007B8F;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 90%;
+    padding: 7px;
+    display: block
+}
+.contact_form input:focus {
+    outline: 1px solid #007B8F;
+}
+.contact_form textarea {
+    border: 1px solid #007B8F;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 90%;
+    padding: 7px;
+    height: 200px;
+}
+.contact_form .submit {
+    margin: 30px 0;
+    background-color: #007B8F;
+    width: 93%;
+    color: #ebe8e2;
+    font-size: 20px;
+}
+.contact_form .submit:hover {
+  transform: translate3d(0, 2px, 0);
+  box-shadow: none;
+  background: #006272;
+}
+.contact_form .required {
+    color: #E74C3C;
+    padding: 0 0 0 5px;
+}
+.contact_form .error {
+    width: 85%;
+    color: #E74C3C;
+    background-color: #FDECEA;
+    border-radius: 6px;
+    padding: 10px 20px;
+    margin: 0 0 20px 0;
+    display: none;
+}
+.contact_form .success {
+    width: 85%;
+    color: #1E8449;
+    background-color: #C7EFD9;
+    border-radius: 6px;
+    padding: 10px 20px;
+    margin: 0 0 20px 0;
+    display: none;
 }
 
 /* footer */
