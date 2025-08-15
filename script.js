@@ -11,4 +11,13 @@ $(function () {
   $pageTop.click(function () {
     $('html, body').animate({ scrollTop: 0 }, 300);
   });
-});
+
+  // nav_mobile
+  const $navMobile = $(".nav_mobile");
+  const $navMobileTrigger = $(".nav_mobile_trigger");
+  $navMobileTrigger.click(function () {
+    $(this).toggleClass("active");
+    $navMobile.slideToggle();
+    $(this).find('i').toggleClass('fa-navicon fa-times');
+  });
+})

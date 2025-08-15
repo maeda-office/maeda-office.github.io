@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
 
 body {
     background-color: #E6F7FA;
@@ -82,41 +82,65 @@ h1 span {
   box-shadow: none;
   background: #6FCF97;
 }
+@media screen and (max-width: 600px) {
+    .header {
+        height: 160px;
+    }
+    .header_title {
+        float: none;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .header_info {
+        float: none;
+        text-align: center;
+        margin: 10px auto 0 auto;
+    }
+    .header_info a {
+        margin: 10px 35px;
+    }
+}
 
-/* nav */
+/* nav_pc */
 .nav {
     margin: 15px auto;
     background-color: #8FE388;
     padding: 7px 0 0 0;  /* nav上の影の幅 */
 }
-.nav_wrapper {
+
+@media screen and (max-width: 768px) {
+    .nav_pc {
+        display: none;
+    }
+}
+.nav_pc {
     background-color: #007B8F;
 }
-.nav ul {
+.nav_pc ul {
     list-style: none;
     padding: 15px 0;
     margin: 0;
     text-align: center;
 }
-.nav li {
+.nav_pc li {
     display: inline-block;
     font-size: 16px;
     border-right: 1px solid #8f9aad;
     padding: 0 30px;
 }
-.nav .left {
+.nav_pc .left {
     border-left: 1px solid #8f9aad;
 }
-.nav .here a::after {
+.nav_pc .here a::after {
     width: 100%; /* 現在のページに対しては常に表示 */
 }
-.nav li a {
+.nav_pc li a {
     color: #ebe8e2;
     position: relative;
     display: block;
     padding: 0 15px;
 }
-.nav li a::after {
+.nav_pc li a::after {
   position: absolute;
   content: '';
   bottom: -7px;
@@ -126,8 +150,51 @@ h1 span {
   background: #8FE388;
   transition: all 0.3s ease 0s;
 }
-.nav li a:hover::after {
+.nav_pc li a:hover::after {
   width: 100%;
+}
+
+/* nav_mobile */
+@media screen and (min-width: 769px) {
+    .nav_mobile_trigger {
+        display: none;
+    }
+}
+.nav_mobile {
+    background-color: #007B8F;
+    display: none;
+}
+.nav_mobile ul {
+    list-style: none;
+    padding: 0 0 15px 0;
+    margin: 0;
+    text-align: center;
+}
+.nav_mobile li {
+    font-size: 16px;
+    border-bottom: 1px dashed #8f9aad;
+    padding: 5px 0;
+}
+.nav_mobile li a {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    color: #ebe8e2;
+}
+.nav_mobile .top {
+    border-top: 1px dashed #8f9aad;
+}
+.nav_mobile_trigger {
+    background-color: #007B8F;
+    color: #ebe8e2;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+}
+.nav_mobile_trigger i {
+    display: inline-block;
+    padding: 0 5px 0 0;
 }
 
 /* main */
