@@ -20,7 +20,29 @@ h1 {
 }
 h1 span {
     border-bottom: 5px solid #007B8F;
-    padding: 0 8px 3px 5px;
+    padding: 0 8px 1px 5px;
+}
+
+/* pagetop */
+.pagetop {
+    position: fixed;
+    right: 25px;
+    bottom: 45px;
+    z-index: 10000;
+    width: 46px;
+    height: 48px;
+    display: none;
+    cursor: pointer;
+}
+
+.pagetop i {
+    background: #007B8F;
+    border: 1px solid #007B8F;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 1;
+    padding: 15px;
+    color: #fff;
 }
 
 /* header */
@@ -55,6 +77,11 @@ h1 span {
     padding: 5px 30px;
     margin: 10px;
 }
+.header_info a:hover {
+  transform: translate3d(0, 2px, 0);
+  box-shadow: none;
+  background: #6FCF97;
+}
 
 /* nav */
 .nav {
@@ -75,13 +102,32 @@ h1 span {
     display: inline-block;
     font-size: 16px;
     border-right: 1px solid #8f9aad;
-    padding: 0 45px;
+    padding: 0 30px;
 }
-.nav .is_left {
+.nav .left {
     border-left: 1px solid #8f9aad;
+}
+.nav .here a::after {
+    width: 100%; /* 現在のページに対しては常に表示 */
 }
 .nav li a {
     color: #ebe8e2;
+    position: relative;
+    display: block;
+    padding: 0 15px;
+}
+.nav li a::after {
+  position: absolute;
+  content: '';
+  bottom: -7px;
+  left: 0;
+  width: 0;
+  height: 2.5px;
+  background: #8FE388;
+  transition: all 0.3s ease 0s;
+}
+.nav li a:hover::after {
+  width: 100%;
 }
 
 /* main */
@@ -90,10 +136,17 @@ h1 span {
     padding-bottom: 250px;
     font-weight: 400;
     line-height: 1.6;
-
     max-width: 1050px;
     width: 100%;
     margin: 0 auto;
+}
+.main img {
+    width: 80%;
+    height: auto;
+    margin: 0px auto 20px auto;
+    display: block;
+    border: 10px solid rgba(179, 227, 234, 0.6);
+    border-radius: 5px;
 }
 
 /* footer */
