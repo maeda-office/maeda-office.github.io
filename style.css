@@ -69,7 +69,7 @@ h1 span {
 .header_info div {
     font-size: 17px;
 }
-.header_info a {
+.header_inquiry {
     background: #8FE388;
     color: #2E4053;
     display: block;
@@ -77,7 +77,7 @@ h1 span {
     padding: 5px 30px;
     margin: 10px;
 }
-.header_info a:hover {
+.header_inquiry:hover {
   transform: translate3d(0, 2px, 0);
   box-shadow: none;
   background: #6FCF97;
@@ -173,7 +173,7 @@ h1 span {
 .nav_mobile li {
     font-size: 16px;
     border-bottom: 1px dashed #8f9aad;
-    padding: 5px 0;
+    padding: 10px 0;
 }
 .nav_mobile li a {
     width: 80%;
@@ -188,7 +188,7 @@ h1 span {
     background-color: #007B8F;
     color: #ebe8e2;
     margin: 0 auto;
-    padding: 10px 0;
+    padding: 15px 0;
     text-align: center;
     cursor: pointer;
 }
