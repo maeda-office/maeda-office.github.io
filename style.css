@@ -1,15 +1,17 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
 body {
-    background-color: #fdf7ed;
-    color: #373b43;
-    font-size: 15px;
-    max-width: 1050px;
-    width: 100%;
+    background-color: #E6F7FA;
+    color: #1B2A3A;
+    font-size: 16px;
+    font-family: 'Noto Sans JP';
+    font-weight: 400;
     margin: 20px auto 0 auto;
 }
 
 a {
     text-decoration: none;
-    color: #373b43;
+    color: #1B2A3A;
 }
 
 h1 {
@@ -17,14 +19,16 @@ h1 {
     font-weight: normal;
 }
 h1 span {
-    border-bottom: 5px solid #8f9aad;
+    border-bottom: 5px solid #007B8F;
     padding: 0 8px 3px 5px;
 }
 
 /* header */
 .header {
+    max-width: 1050px;
     width: 100%;
-    height: 120px;
+    margin: 0 auto;
+    height: 110px;
 }
 .header_title {
     float: left;
@@ -37,29 +41,29 @@ h1 span {
 }
 .header_info {
     float: right;
-    margin: 10px 25px 0 0;
+    margin: 20px 25px 0 0;
     text-align: center;
 }
 .header_info div {
     font-size: 17px;
 }
 .header_info a {
-    background: #4e6893;
-    color: #fff;
+    background: #8FE388;
+    color: #2E4053;
     display: block;
-    border-radius: 5px;
-    padding: 10px 30px;
+    border-radius: 8px;
+    padding: 5px 30px;
     margin: 10px;
 }
 
 /* nav */
 .nav {
     margin: 15px auto;
-    background-color: #aab1bd;
-    padding: 10px 0 0 0;
+    background-color: #8FE388;
+    padding: 7px 0 0 0;  /* nav上の影の幅 */
 }
 .nav_wrapper {
-    background-color: #455c82;
+    background-color: #007B8F;
 }
 .nav ul {
     list-style: none;
@@ -71,7 +75,7 @@ h1 span {
     display: inline-block;
     font-size: 16px;
     border-right: 1px solid #8f9aad;
-    padding: 0 15px;
+    padding: 0 45px;
 }
 .nav .is_left {
     border-left: 1px solid #8f9aad;
@@ -84,6 +88,12 @@ h1 span {
 .main {
     padding: 20px;
     padding-bottom: 250px;
+    font-weight: 400;
+    line-height: 1.6;
+
+    max-width: 1050px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* footer */
@@ -91,7 +101,7 @@ h1 span {
     padding: 30px 0 50px 0;
     text-align: center;
     color: #ebe8e2;
-    background-color: #455c82;
+    background-color: #007B8F;
 }
 .footer span {
     font-size: 20px;
