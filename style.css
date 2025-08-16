@@ -69,19 +69,21 @@ h2 {
 }
 .header_title {
     float: left;
-    margin: 10px 25px;
+    margin: 10px 15px;
 }
 .header_title a {
+    display: block; 
+}
+.header_title img {
+    height: 41px;
+}
+.header_title span {
     display: block;
-    font-size: 27px;
-    padding: 5px 0;
-    font-family: '筑紫B丸ゴシック';
-    font-style: normal;
-    font-weight: 700;
+    margin: 0 18px;
 }
 .header_info {
     float: right;
-    margin: 20px 25px 0 0;
+    margin: 15px 25px 0 0;
     display: flex;
     text-align: center;
 }
@@ -120,10 +122,10 @@ h2 {
   box-shadow: none;
   background: #6FCF97;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 910px) {
     .header {
         /* height: 160px; */
-        height: 190px;
+        height: 180px;
     }
     .header_title {
         float: none;
@@ -344,17 +346,14 @@ h2 {
     color: #ebe8e2;
     background-color: #007B8F;
 }
-.footer .name {
-    font-size: 22px;
+.footer img {
+    height: 30px;
     margin: 0 0 10px 0;
-    font-family: '筑紫B丸ゴシック';
-    font-style: normal;
-    font-weight: 700;
 }
 .footer .copyright {
     font-size: 12px;
     margin-top: 10px;
 }
 .footer a {
-    color: #ebe8e2
+    color: #ebe8e2;
 }
