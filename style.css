@@ -5,6 +5,7 @@ body {
     color: #1B2A3A;
     font-size: 16px;
     font-family: 'Noto Sans JP';
+    /* font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Arial", "Yu Gothic", "Meiryo", sans-serif; */
     font-weight: 400;
     margin: 20px auto 0 auto;
     /* テキストの折り返し */
@@ -75,7 +76,8 @@ h1 span {
 }
 .header_info div {
     font-size: 17px;
-    display: none;
+    margin: 0 15px 0 0;
+    display: inline-block;
 }
 .header_info div a {
     margin: 0 0 0 5px;
@@ -83,7 +85,7 @@ h1 span {
 .header_inquiry {
     background: #8FE388;
     color: #2E4053;
-    display: block;
+    display: inline-block;
     border-radius: 8px;
     padding: 5px 30px;
     margin: 10px;
@@ -309,6 +311,11 @@ h1 span {
     color: #ebe8e2;
     background-color: #007B8F;
 }
-.footer span {
+.footer .name {
     font-size: 20px;
+    margin: 0 0 10px 0;
+}
+.footer .copyright {
+    font-size: 12px;
+    margin-top: 10px;
 }
