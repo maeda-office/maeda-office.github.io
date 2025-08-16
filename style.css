@@ -1,8 +1,4 @@
-@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
-@font-face {
-     font-family: 'Corporte Logo';
-     src: url('./Corporate-Logo-Rounded-Bold-ver3.otf') format('opentype');
-   }
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400&family=Varela+Round&display=swap'); 
 
 body {
     background-color: #E6F7FA;
@@ -32,6 +28,13 @@ h1 {
 h1 span {
     border-bottom: 5px solid #007B8F;
     padding: 0 8px 1px 5px;
+}
+h2 {
+    font-size: 20px;
+    font-weight: normal;
+    border-left: 4px solid #6FCF97;
+    padding: 0 0 0 12px;
+    margin: 20px 0 0 10px;
 }
 
 /* pagetop */
@@ -342,9 +345,11 @@ h1 span {
     background-color: #007B8F;
 }
 .footer .name {
-    font-size: 20px;
+    font-size: 22px;
     margin: 0 0 10px 0;
-    /* font-family: '筑紫B丸ゴシック'; */
+    font-family: '筑紫B丸ゴシック';
+    font-style: normal;
+    font-weight: 700;
 }
 .footer .copyright {
     font-size: 12px;
