@@ -123,7 +123,7 @@ h2 {
 @media screen and (max-width: 900px) {
     .header {
         /* height: 160px; */
-        height: 180px;
+        height: 190px;
     }
     .header_title {
         float: none;
