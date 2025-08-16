@@ -15,6 +15,7 @@
     <link rel="shortcut icon" href="../images/icon.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 </head>
 <body>
     <div class="pagetop">
@@ -63,7 +64,7 @@
             ご質問やご相談など、どんなことでもお気軽にお問い合わせください。<br>
             なお、返信にはお時間をいただく場合がございますので、ご了承ください。
         </p>
-        <div class="contact_form">
+        <form class="contact_form">
             <div class="error">
             </div>
             <div class="success">
@@ -71,19 +72,19 @@
                 追ってご連絡いたしますので、しばらくお待ちください。
             </div>
             <label>お名前<span class="required">*必須</span></label><br>
-            <input type="text" id="name">
+            <input type="text" id="name" name="name">
             <label>フリガナ</label><br>
-            <input type="text" id="furigana">
+            <input type="text" id="furigana" name="furigana">
             <label>メールアドレス<span class="required">*必須</span></label><br>
-            <input type="email" id="email">
+            <input type="email" id="email" name="email">
             <label>メールアドレス(確認用)<span class="required">*必須</span></label><br>
-            <input type="email" id="email2">
+            <input type="email" id="email2" name="email2">
             <label>電話番号</label><br>
-            <input type="tel" id="phone">
+            <input type="tel" id="phone" name="phone">
             <label>お問い合わせ内容<span class="required">*必須</span></label><br>
-            <textarea id="message" rows="5"></textarea>
+            <textarea id="message" rows="5" name="message"></textarea>
             <input type="submit" class="submit" value="送信する">
-        </div>
+        </form>
     </div>
    <div class="footer">
         <div class="name">前田武志税理士事務所</div> 

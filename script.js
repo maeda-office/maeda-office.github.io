@@ -22,6 +22,7 @@ $(function () {
   });
 
   // contact form
+  emailjs.init("AAG3-qkE9wfXBgYah"); 
   const $submitButton = $(".submit");
   $submitButton.click(function (e) {
     e.preventDefault();
@@ -45,17 +46,26 @@ $(function () {
     if (errorMessage) {
         $(".error").html(errorMessage).show();
         $(".success").hide();
+        $('html, body').animate({ scrollTop: 0 }, 300);
     } else {
-        // TODO: send data to the server
-        $(".error").hide();
-        $(".success").show();
-        // reset data
-        $("#name").val("");
-        $("#email").val("");
-        $("#email2").val("");
-        $("#phone").val("");
-        $("#message").val("");
+        // send to the server  
+        emailjs.sendForm("tax_account_office", "tax_account_office", ".contact_form")
+        .then(function(response) {
+            // show message
+            $(".error").hide();
+            $(".success").show();
+            // reset data
+            $("#name").val("");
+            $("#email").val("");
+            $("#email2").val("");
+            $("#phone").val("");
+            $("#message").val("");
+            $('html, body').animate({ scrollTop: 0 }, 300);
+        }, function(error) {
+            $(".error").html("送信に失敗しました。").show();
+            $(".success").hide();
+            $('html, body').animate({ scrollTop: 0 }, 300);
+        });
     }
-    $('html, body').animate({ scrollTop: 0 }, 300);
   });
 })
