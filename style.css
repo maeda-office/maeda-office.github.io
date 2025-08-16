@@ -95,10 +95,10 @@ h1 span {
   box-shadow: none;
   background: #6FCF97;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .header {
         /* height: 160px; */
-        height: 100px;
+        height: 130px;
     }
     .header_title {
         float: none;
@@ -109,6 +109,9 @@ h1 span {
         float: none;
         text-align: center;
         margin: 10px auto 0 auto;
+    }
+    .header_info div {
+        display: block;
     }
     .header_info a {
         margin: 10px 35px;
