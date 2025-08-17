@@ -22,7 +22,7 @@ $(function () {
   });
 
   // contact form
-  emailjs.init("AAG3-qkE9wfXBgYah"); 
+  emailjs.init("OO6fd1a_ndRDQ4I9S"); 
   const $submitButton = $(".submit");
   $submitButton.click(function (e) {
     e.preventDefault();
