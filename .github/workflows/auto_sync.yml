@@ -1,0 +1,31 @@
+name: Merge upstream branches
+
+on:
+  schedule:
+    - cron:  '10 */1 * * *'
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Merge upstream
+        env:
+          NAME: maeda-office
+          EMAIL: github+g.keisyo727@gmail.com
+          REPO_FORK: https://github.com/m4fn3/MyTaxWeb
+        run: |
+          git config --global user.name ${NAME}
+          git config --global user.email ${EMAIL}
+          
+          git config --global pull.rebase merges
+
+          git pull --unshallow
+
+          git remote add upstream ${REPO_FORK}
+          
+          git fetch upstream
+          
+          git checkout master
+          git merge --no-edit upstream/master
+          git push origin master
