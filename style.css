@@ -384,3 +384,6 @@ h2 {
 .footer a {
     color: #ebe8e2;
 }
+.footer span {
+    display: inline-block;
+}
