@@ -2,7 +2,7 @@
 title: "タイトル"
 date: 2025-01-01
 tags: ["タグ1", "タグ2"]
-draft: true
+draft: false
 ---
 
 文章で改行するには右の記号が必要 <br>
