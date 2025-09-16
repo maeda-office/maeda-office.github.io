@@ -430,7 +430,7 @@ h2 {
     max-width: none;
 }
 .article_content img {
-    max-width: 500px;
+    max-width: 750px;
 }
 .article_content table {
     margin: 20px 40px;
@@ -439,8 +439,17 @@ h2 {
 }
 .article_content th, 
 .article_content td {
-    padding: 3px;
+    padding: 5px;
     border:1px solid #1B2A3A;
+}
+.article_content .red {
+    color: #E74C3C;
+}
+.article_content .gray {
+    color: gray;
+}
+.article_content .center {
+    text-align: center;
 }
 
 /* footer */
