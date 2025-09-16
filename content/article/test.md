@@ -18,7 +18,9 @@ draft: true
 
 画像の挿入は以下のよう。
 ![画像の概要](link-to-image.png)
-
+しかし、リンクの指定が難しいので
+{{<imgx src="article_assets/income-deductions/fig1.png">}}
+のようにHugoのショートコードを使う。imgxは独自で作ったrelURLに自動変換するもの。
 
 
 ## 小見出し (左緑線)

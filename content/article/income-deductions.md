@@ -7,7 +7,7 @@ tags: ["給与・社保"]
 <span class="red">給与所得控除65万円＋基礎控除95万円＝160万円までは所得0 <br>
 しかし、社会保険の壁には要注意！</span> <br>
 
-![fig1](/article_assets/income-deductions/fig1.png)
+{{<imgx src="article_assets/income-deductions/fig1.png">}}
 
 ## 基礎控除額
 基礎控除は、確定申告や年末調整の際に、総所得金額から差し引ける所得税の控除です。 <br>
@@ -353,13 +353,13 @@ tags: ["給与・社保"]
 	</tr>
 </table>
 
-![fig2](/article_assets/income-deductions/fig2.png)
+{{<imgx src="article_assets/income-deductions/fig2.png">}}
 
 *年収の壁の改定に関連した内容の以下も記載しておきます。*
 
 ## 住民税
 
-![fig3](/article_assets/income-deductions/fig3.png)
+{{<imgx src="article_assets/income-deductions/fig3.png">}}
 
 ## 社会保険
 *短時間労働者の社会保険の加入条件* <br>
