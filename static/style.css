@@ -432,6 +432,11 @@ h2 {
 .article_content img {
     max-width: 750px;
 }
+@media (max-width: 800px) {
+  .article_content img {
+    width: 100%;
+  }
+}
 .article_content table {
     margin: 20px 40px;
     border-collapse: collapse; /* 枠線を重ねて一本で表示 */
