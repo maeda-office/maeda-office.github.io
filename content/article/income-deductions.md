@@ -298,15 +298,13 @@ tags: ["給与・社保"]
 ## 特定親族特別控除
 特定親族とは、所得者と生計を一にする*年齢 19 歳以上 23 歳未満*の親族（配偶者、青色事業専従者として給与の支払を受ける人及び白色事業専従者を除く）で合計所得金額が 58 万円超 123万円以下の人をいいます。 <br>
 
-<table class="center">
+<table  class="center">
 	<tr>
 		<td colspan="5" rowspan="2">特定親族の合計所得金額</td>
-		<td colspan="5">（収入が給与だけの</td>
-		<td colspan="3">特定親族</td>
+		<td colspan="5" rowspan="2">（収入が給与だけの場合の収入金額）</td>
+		<td colspan="3" rowspan="2">特定親族特別控除額</td>
 	</tr>
 	<tr>
-		<td colspan="5">場合の収入金額）</td>
-		<td colspan="3">特別控除額</td>
 	</tr>
 	<tr>
 		<td colspan="5">58万円超 85万円以下</td>
