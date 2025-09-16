@@ -4,10 +4,11 @@
         こちらでは、事業活動において必要な豆知識を掲載しております。<br>
         定期的に更新していきますので、是非ご覧ください。
     </p>
+    <!-- ・はリンクに含めないので、リンクから取り除いておく -->
     <ul class="article_tags">
         <li><a href="{{ "article" | relURL }}">全て</a></li>
         {{ range $tag, $pages := .Site.Taxonomies.tags }}
-            <li><a href="{{ "tags/" | relURL }}{{ $tag }}">{{ $tag }}</a></li>
+            <li><a href="{{ "tags/" | relURL }}{{ replace $tag "・" "" }}">{{ $tag }}</a></li>
         {{ end }}
     </ul>
     <ul class="article_list">
@@ -15,7 +16,7 @@
             <li>
                 <div class="article_list_tag_box">
                     {{ range .Params.tags }}
-                        <a class="article_list_tag" href="{{ "tags/" | relURL }}{{.}}">{{ . }}</a>
+                        <a class="article_list_tag" href="{{ "tags/" | relURL }}{{ replace . "・" "" }}">{{ . }}</a>
                     {{ end }}
                     <!-- <span>{{ .Date.Format "2006/01/02" }}</span> -->
                 </div>
