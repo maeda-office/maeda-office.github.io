@@ -372,7 +372,7 @@ h2 {
     flex-wrap: wrap; /* 複数行に折り返す */
     list-style: none;
     padding: 0 20px;
-    max-width: 350px; /* 4つ: 400px */
+    max-width: 420px;
     margin: 30px 0 30px 0;
 }
 .article_tags li {   
@@ -452,39 +452,48 @@ h2 {
 .article_content th, 
 .article_content td {
     padding: 5px 8px;
-    border-bottom: 1px solid #1B2A3A; 
+    /* border-bottom: 1px solid #1B2A3A;  */
+    border: 0.5px solid gray; 
 }
 /* 擬似要素で上下の線をはみ出させる (tricky) */
 .article_content table {
   position: relative;
+  border: 2px solid #1B2A3A;
 }
 .article_content thead {
   position: relative;
   border-bottom: none;
 }
-.article_content thead::before {
+/* -10pxではみ出す */
+.article_contentXXX thead::before {
   content: "";
   position: absolute;
   top: 0;
-  left: -10px;    
-  right: -10px;
-  border-top: 2px solid #1B2A3A;
+  /* left: -10px;    
+  right: -10px; */
+  left: 0px;
+  right: 0px;
+  /* border-top: 2px solid #1B2A3A; */
 }
 .article_content thead::after {
   content: "";
   position: absolute;
   bottom: 0;         
-  left: -10px;       
-  right: -10px;      
+  /* left: -10px;       
+  right: -10px;       */
+  left: 0px;
+  right: 0px;
   border-bottom: 2px solid #1B2A3A;
 }
-.article_content tbody::after {
+.article_contentXXX tbody::after {
   content: "";
   position: absolute;
   bottom: 0;
-  left: -10px;
-  right: -10px;
-  border-bottom: 2px solid #1B2A3A;
+  /* left: -10px;
+  right: -10px; */
+  left: 0px;
+  right: 0px;
+  /* border-bottom: 2px solid #1B2A3A; */
 }
 
 

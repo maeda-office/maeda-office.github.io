@@ -2,7 +2,9 @@
 title: "給与収入からの各種控除額"
 date: 2025-09-16
 tags: ["給与・社保"]
+weight: 5
 ---
+<!-- 給与控除 -->
 
 <span class="red">給与所得控除65万円＋基礎控除95万円＝160万円までは所得0 <br>
 しかし、社会保険の壁には要注意！</span> <br>
@@ -22,7 +24,7 @@ tags: ["給与・社保"]
 	</tr>
 	<tr>
 		<td colspan="4">改正後</td>
-		<td colspan="2" rowspan="2">改正前</td>
+		<td colspan="2" rowspan="2" class="gray">改正前</td>
 	</tr>
 	<tr>
 		<td colspan="2">R7･8分</td>
@@ -35,7 +37,7 @@ tags: ["給与・社保"]
 		<td colspan="4"></td>
 		<td colspan="4">（200万3,999円以下）</td>
 		<td colspan="4"><span class="red">95万円</span></td>
-		<td colspan="2" rowspan="5">48万円</td>
+		<td colspan="2" rowspan="5" class="gray">48万円</td>
 	</tr>
 	<tr>
 		<td colspan="3">132万円超</td>
@@ -82,24 +84,24 @@ tags: ["給与・社保"]
 	</tr>
 	<tr>
 		<td colspan="4">改正後</td>
-		<td colspan="4">改正前</td>
+		<td colspan="4" class="gray">改正前</td>
 	</tr>
 </thead>
 	<tr>
 		<td colspan="3"></td>
 		<td colspan="3">162.5万円以下</td>
 		<td colspan="4" rowspan="3"><span class="red">65万円</span></td>
-		<td colspan="4">55万円</td>
+		<td colspan="4" class="gray">55万円</td>
 	</tr>
 	<tr>
 		<td colspan="3">162.5万円超</td>
 		<td colspan="3">180万円以下</td>
-		<td colspan="4">収入×40%－ 10万円</td>
+		<td colspan="4" class="gray">収入×40%－ 10万円</td>
 	</tr>
 	<tr>
 		<td colspan="3">180万円超</td>
 		<td colspan="3">190万円以下</td>
-		<td colspan="4">収入×30%＋ 8万円</td>
+		<td colspan="4" class="gray">収入×30%＋ 8万円</td>
 	</tr>
 	<tr>
 		<td colspan="3">190万円超</td>
@@ -138,11 +140,10 @@ tags: ["給与・社保"]
 <table class="center">
 <thead>
 	<tr>
-		<td colspan="6">控除を受ける納税者</td>
+		<td colspan="6" rowspan="2">控除を受ける納税者本人の合計所得金額</td>
 		<td colspan="8">控除額</td>
 	</tr>
 	<tr>
-		<td colspan="6">本人の合計所得金額</td>
 		<td colspan="4">一般控除対象配偶者</td>
 		<td colspan="4">老人控除対象配偶者</td>
 	</tr>
@@ -198,7 +199,7 @@ tags: ["給与・社保"]
 	</tr>
 </thead>
 	<tr>
-		<td rowspan="9">配偶者の合計所得金額</td>
+		<td rowspan="9" style="width: 20px;">配偶者の合計所得金額</td>
 		<td colspan="3">48万円超</td>
 		<td colspan="3">95万円以下</td>
 		<td colspan="3">38万円</td>
@@ -369,7 +370,7 @@ tags: ["給与・社保"]
 
 ## 住民税
 
-{{<imgx src="article_assets/income-deductions/fig3.png">}}
+{{<imgx src="article_assets/income-deductions/fig3.png" style="max-width: 650px">}}
 
 ## 社会保険
 **短時間労働者**の社会保険の加入条件 <br>
