@@ -1,13 +1,13 @@
 ---
 title: "消費税について"
 date: 2025-10-25
-tags: ["給与・社保", "税金"]
+tags: ["税金"]
 # weight: 
 ---
 <!-- 消費税 -->
 ## 免税事業者と課税事業者
 
-{{<imgx src="article_assets/consumption-tax/fig1.png" style="max-width: 650px">}}<br>
+{{<imgx src="article_assets/consumption-tax/fig1.png" style="max-width: 770px">}}<br>
 <br>
 ※1	法人は、資本金1,000万円以上であれば設立1期目から課税事業者になります。<br>
     <br>
@@ -109,7 +109,7 @@ tags: ["給与・社保", "税金"]
 		<td>年11回※4</td>
 	</tr>
 	<tr>
-		<td colspan="2" rowspan="3">中間納付税額※3<br>直前期間消費税額<br>地方消費税</td>
+		<td colspan="2" rowspan="3">中間納付税額※3<br>　直前期間消費税額<br>　(地方消費税)</td>
 		<td colspan="2" rowspan="3"><br>×6/12<br>+上記消費税額×22/78</td>
 		<td colspan="2" rowspan="3"><br>×3/12<br>+同左</td>
 		<td rowspan="3"><br>×1/12<br>+同左</td>
