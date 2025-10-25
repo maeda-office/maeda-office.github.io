@@ -46,7 +46,7 @@ tags: ["給与・社保", "税金"]
 簡易課税： 課税売上に係る消費税　×（１－みなし仕入率※）×　消費税率　＝　納税額			<br>
 2割特例： 課税売上　×　消費税率　×　20％　＝　納税額<br>
 <br>
-※ みなし仕入率<br>
+※ みなし仕入率
 <table>
 <thead>
 	<tr>
@@ -100,7 +100,7 @@ tags: ["給与・社保", "税金"]
 		<td colspan="2">400万円超～<br>4,800万円以下</td>
 		<td>4,800万円超</td>
 	</tr>
-    </thead>
+</thead>
 	<tr>
 		<td colspan="2">中間申告の回数※2</td>
 		<td rowspan="4">原則、中間申告不要</td>
@@ -109,26 +109,18 @@ tags: ["給与・社保", "税金"]
 		<td>年11回※4</td>
 	</tr>
 	<tr>
-		<td colspan="2">中間納付税額※3</td>
-		<td colspan="2"></td>
-		<td colspan="2"></td>
-		<td></td>
+		<td colspan="2" rowspan="3">中間納付税額※3<br>直前期間消費税額<br>地方消費税</td>
+		<td colspan="2" rowspan="3"><br>×6/12<br>+上記消費税額×22/78</td>
+		<td colspan="2" rowspan="3"><br>×3/12<br>+同左</td>
+		<td rowspan="3"><br>×1/12<br>+同左</td>
 	</tr>
 	<tr>
-		<td colspan="2">直前期間消費税額</td>
-		<td colspan="2">×6/12</td>
-		<td colspan="2">×3/12</td>
-		<td>×1/12</td>
 	</tr>
 	<tr>
-		<td colspan="2">地方消費税</td>
-		<td>+上記消費税額×22/78</td>
-		<td></td>
-		<td colspan="2">+同左</td>
-		<td>+同左</td>
 	</tr>
 </table>
-<br>
+
+
 ※1	地方消費税を含みません。<br>
 ※2	確定申告以外に必要な中間申告の回数になります。<br>
 ※3	中間納付税額と併せて地方消費税の中間納付税額を納付することになります。<br>
