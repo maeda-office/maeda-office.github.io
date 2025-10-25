@@ -1,7 +1,7 @@
 ---
 title: "給与収入からの各種控除額"
 date: 2025-09-16
-tags: ["給与・社保"]
+tags: ["給与・社保", "税金"]
 weight: 5
 ---
 <!-- 給与控除 -->
@@ -10,6 +10,61 @@ weight: 5
 しかし、社会保険の壁には要注意！</span> <br>
 
 {{<imgx src="article_assets/income-deductions/fig1.png">}}
+
+
+## 給与所得控除額
+所得税の課税対象となる「給与所得」を算出する際に用いられる制度で、1年間の給与収入額に応じて一定額を控除できます。 <br>
+
+<table class="center">
+<thead>
+	<tr>
+		<td colspan="6" rowspan="2">給与の収入金額</td>
+		<td colspan="8">給与所得控除額</td>
+	</tr>
+	<tr>
+		<td colspan="4">改正後</td>
+		<td colspan="4" class="gray">改正前</td>
+	</tr>
+</thead>
+	<tr>
+		<td colspan="3"></td>
+		<td colspan="3">162.5万円以下</td>
+		<td colspan="4" rowspan="3"><span class="red">65万円</span></td>
+		<td colspan="4" class="gray">55万円</td>
+	</tr>
+	<tr>
+		<td colspan="3">162.5万円超</td>
+		<td colspan="3">180万円以下</td>
+		<td colspan="4" class="gray">収入×40%－ 10万円</td>
+	</tr>
+	<tr>
+		<td colspan="3">180万円超</td>
+		<td colspan="3">190万円以下</td>
+		<td colspan="4" class="gray">収入×30%＋ 8万円</td>
+	</tr>
+	<tr>
+		<td colspan="3">190万円超</td>
+		<td colspan="3">360万円以下</td>
+		<td colspan="4" rowspan="4">変更なし</td>
+		<td colspan="4">収入×30%＋ 8万円</td>
+	</tr>
+	<tr>
+		<td colspan="3">360万円超</td>
+		<td colspan="3">660万円以下</td>
+		<td colspan="4">収入×20%＋ 44万円</td>
+	</tr>
+	<tr>
+		<td colspan="3">660万円超</td>
+		<td colspan="3">850万円以下</td>
+		<td colspan="4">収入×10%＋110万円</td>
+	</tr>
+	<tr>
+		<td colspan="3">850万円超</td>
+		<td colspan="3"></td>
+		<td colspan="4">195万円（上限）</td>
+	</tr>
+</table>
+
 
 ## 基礎控除額
 基礎控除は、確定申告や年末調整の際に、総所得金額から差し引ける所得税の控除です。 <br>
@@ -70,59 +125,6 @@ weight: 5
 	</tr>
 	<tr>
 		<td colspan="20">2,400万円以下：48万円、2,450万円以下：32万円、2,500万円以下：16万円、2,500万円超：0円</td>
-	</tr>
-</table>
-
-## 給与所得控除額
-所得税の課税対象となる「給与所得」を算出する際に用いられる制度で、1年間の給与収入額に応じて一定額を控除できます。 <br>
-
-<table class="center">
-<thead>
-	<tr>
-		<td colspan="6" rowspan="2">給与の収入金額</td>
-		<td colspan="8">給与所得控除額</td>
-	</tr>
-	<tr>
-		<td colspan="4">改正後</td>
-		<td colspan="4" class="gray">改正前</td>
-	</tr>
-</thead>
-	<tr>
-		<td colspan="3"></td>
-		<td colspan="3">162.5万円以下</td>
-		<td colspan="4" rowspan="3"><span class="red">65万円</span></td>
-		<td colspan="4" class="gray">55万円</td>
-	</tr>
-	<tr>
-		<td colspan="3">162.5万円超</td>
-		<td colspan="3">180万円以下</td>
-		<td colspan="4" class="gray">収入×40%－ 10万円</td>
-	</tr>
-	<tr>
-		<td colspan="3">180万円超</td>
-		<td colspan="3">190万円以下</td>
-		<td colspan="4" class="gray">収入×30%＋ 8万円</td>
-	</tr>
-	<tr>
-		<td colspan="3">190万円超</td>
-		<td colspan="3">360万円以下</td>
-		<td colspan="4" rowspan="4">変更なし</td>
-		<td colspan="4">収入×30%＋ 8万円</td>
-	</tr>
-	<tr>
-		<td colspan="3">360万円超</td>
-		<td colspan="3">660万円以下</td>
-		<td colspan="4">収入×20%＋ 44万円</td>
-	</tr>
-	<tr>
-		<td colspan="3">660万円超</td>
-		<td colspan="3">850万円以下</td>
-		<td colspan="4">収入×10%＋110万円</td>
-	</tr>
-	<tr>
-		<td colspan="3">850万円超</td>
-		<td colspan="3"></td>
-		<td colspan="4">195万円（上限）</td>
 	</tr>
 </table>
 

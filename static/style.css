@@ -124,8 +124,8 @@ h2 {
 }
 @media screen and (max-width: 910px) {
     .header {
-        /* height: 160px; */
-        height: 180px;
+        height: 130px; /* 電話番号無し */
+        /* height: 180px; */
     }
     .header_title {
         float: none;
@@ -499,6 +499,12 @@ h2 {
 
 .article_content .red {
     color: #E74C3C;
+}
+.article_content .blue {
+    color: #3498DB;
+}
+.article_content .green {
+    color: #27AE60;
 }
 .article_content .gray {
     color: gray;
